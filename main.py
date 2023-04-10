@@ -1,7 +1,4 @@
-from load_data import load_data, Country, scatter_plot_from_coordinates, plot_world
-import pdb
-import matplotlib.pyplot as plt
-import math
+from load_data import load_data, Country, plot_world
 
 
 def main():
@@ -14,7 +11,7 @@ def main():
 
         countries.append(country)
 
-    plot_world(countries)
+    plot_world(countries, area_lower_bound=1.0)
 
 
 if __name__ == "__main__":
